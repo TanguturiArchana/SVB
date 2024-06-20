@@ -41,13 +41,7 @@ import './game.css';
 
 export default function Option(props) {
     const getBgClass = (key, option) => {
-        console.log('Evaluating option:', option);
-        console.log('props.showConfetti:', props.showConfetti);
-        console.log('props.isCorrect:', props.isCorrect);
-        console.log('props.currentData.correctanswer:', props.currentData.correctanswer);
-        console.log('props.msg:', props.msg);
-        console.log('props.selectedOptionIndex:', props.selectedOptionIndex);
-        console.log('key:', key);
+        
         if (props.showConfetti && props.isCorrect && props.currentData.correctanswer === option) {
             console.log('Correct option', option);
             return 'option-correct';
