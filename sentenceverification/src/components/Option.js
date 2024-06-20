@@ -1,37 +1,3 @@
-// import React from 'react'
-// import playIcon from './playIcon.png';
-// import playIconClicked from './playIconClicked.jpg';
-
-// export default function Option(props) {
-//     const getBgColor = (key, option) => {
-//         if (props.showConfetti && props.isCorrect && props.currentData.correctanswer === option) {
-//             return 'green'; 
-//         } //else if (props.msg && !props.isCorrect && props.selectedOptionIndex === key && props.currentData.correctanswer !== option) {
-//         //     return 'red'; }
-//         else {
-//             return '#E3E2C3';
-//         }
-//     };
-//     return (
-//         <div style={{ textAlign: "left", margin: "2%"}}>
-//         {
-//             props.options.map((option, key) => (
-//                 <div style={{
-//                     padding: "0.5%",
-//                     backgroundColor: getBgColor(key, option),
-//                     border: '4px solid #3C9099',
-//                     borderRadius: "2%",
-//                     margin: "1%",
-//                 }} key={key}>
-//                     <img src={props.AudioOption === option && props.img ? playIcon:playIconClicked } onClick={() => props.playAudio(option)} style={{ cursor: "pointer", marginRight: "10px", height: "0.5%", width: "3%" }} disabled={props.isSpeaking} alt='audio'/>
-//                     <input type='radio' id={`option${props.index + 1}`} name={`option${props.index + 1}`} style={{ transform: "scale(1.5)" }} disabled={props.isSpeaking} checked={props.selectedOptionIndex === key} onChange={() => props.handleCheckboxChange(option, key)} />
-//                     <label htmlFor={`option${props.index + 1}`} style={{ marginLeft: "5px", color: "black" }} disabled={props.isSpeaking}>{option}</label>
-//                 </div>
-//             ))
-//         }
-//         </div> 
-//     )
-// }
 
 import React from 'react';
 import playIcon from './playIcon.png';
